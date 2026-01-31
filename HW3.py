@@ -1,12 +1,13 @@
-# Name:
-# Student ID:
-# Email: 
-# Who or what you worked with on this homework (including generative AI like ChatGPT):
+# Name: Elli Hoke
+# Student ID: 4654 6511
+# Email: ehoke@umich.edu
+# Who or what you worked with on this homework (including generative AI like ChatGPT): GenAI Perplexity
 # If you worked with generative AI also add a statement for how you used it.
-# e.g.:
+# e.g.: Asked Per. to figure out bugs that with pushing to GitHub. Asked Per. to compare my code agaisnt rubric 
+# to see if I missed something or had a spelling error.
 # Asked ChatGPT hints for debugging and suggesting the general structure of the code
 # Did your use of GenAI on this assignment align with your goals and guidelines in 
-#    your Gen AI contract? If not, why?
+#    your Gen AI contract? If not, why? Yes, when I was working on HW3 it was later at night so I couldn't attend office hours.
 
 import random
 import io

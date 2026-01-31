@@ -1,6 +1,6 @@
-# Name: Elli Hoke
+# Name:
 # Student ID:
-# Email: ehoke@umich.edu
+# Email: 
 # Who or what you worked with on this homework (including generative AI like ChatGPT):
 # If you worked with generative AI also add a statement for how you used it.
 # e.g.:
@@ -101,7 +101,7 @@ class CouponDispenser:
             user_input = input(f"Round {round_number} - Enter a name (or a comma-separated list), or type 'show' or 'exit': ")
 
             if user_input == "exit":
-                print("Goodbye")
+                print("Goodbye!")
                 break
             
             elif user_input == "show":
@@ -137,8 +137,25 @@ class CouponDispenser:
         Returns:
             None
         """
-        # TODO: Implement per instructions
-        pass
+        if len(self.issued_indices) == 0:
+            print("Empty")
+            return
+        
+        counts = [0] * len(self.coupon_cards)
+
+        for idx in self.issued_indices:
+            counts[idx] += 1
+
+        for i in range(len(self.coupon_cards)):
+            coupon = self.coupon_cards[i]
+            count = counts[i]
+            print(f"{coupon} distribution count: {count}.")
+
+        
+        
+
+        
+
 
 
 def main():
@@ -157,10 +174,10 @@ def main():
     ]
 
     # Uncomment the lines below as you implement each function.
-    # box = CouponDispenser(coupon_cards)
-    # box.distribute_session()
-    # box.tally_distribution()
-    pass
+    box = CouponDispenser(coupon_cards)
+    box.distribute_session()
+    box.tally_distribution()
+    
 
 
 # -----------------------
